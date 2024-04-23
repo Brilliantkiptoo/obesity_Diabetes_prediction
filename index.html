@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eat Well Live Well - Diabetes Prediction</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Eat Well Live Well</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Diabetes</a></li>
+                <li><a href="prediction-form.html">Get Your Prediction</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="aboutS" class="aboutS">
+        <div class="background-image"></div>
+
+        <section id="about" class="hidden">
+            <h2>About Diabetes</h2>
+            <p>Diabetes is a chronic disease that affects millions of people worldwide. It occurs when the body can't produce enough insulin or can't use it effectively. Common symptoms include frequent urination, increased thirst, and unexplained weight loss. If left untreated, diabetes can lead to serious complications such as heart disease, stroke, and kidney failure.</p>
+            <p>It's important to eat a balanced diet, exercise regularly, and maintain a healthy weight to reduce your risk of developing diabetes.</p>
+            <p>Statistics show that diabetes rates are on the rise globally, with an estimated 422 million adults living with diabetes in 2014. By 2040, this number is expected to rise to 642 million.</p>
+        </section>
+        <section id="form">
+            <h2>Get Your Prediction</h2>
+            <form id="user-info-form">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required><br>
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select><br>
+                <a href="prediction-form.html" class="prediction-button" id="prediction-button">Start Prediction</a>
+            </form>
+        </section>
+    </section>
+
+    <footer>
+        <div id="ft"><p>© 2024 Eat Well Live Well App</p></div>
+    </footer>
+</body>
+</html>
