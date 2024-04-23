@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Diabetes Prediction Form</h1>
+        <p>Please enter your information below:</p>
+        <form id="prediction-form">
+            <!-- Numeric Input Fields -->
+            <div class="input-container">
+                <label for="obesity-rate">Obesity Rate (%)</label>
+                <input type="number" id="obesity-rate" name="obesity-rate" min="0" max="100" step="0.01" required>
+            </div>
+
+            <div class="input-container">
+                <label for="selenium">Selenium Level (mcg)</label>
+                <input type="number" id="selenium" name="selenium" min="0" step="0.01" required>
+            </div>
+
+            <div class="input-container">
+                <label for="vitamin-e">Vitamin E Level (mg)</label>
+                <input type="number" id="vitamin-e" name="vitamin-e" min="0" step="0.01" required>
+            </div>
+
+            <div class="input-container">
+                <label for="dietary-sodium">Dietary Sodium (mg)</label>
+                <input type="number" id="dietary-sodium" name="dietary-sodium" min="0" required>
+            </div>
+
+            <div class="input-container">
+                <label for="vitamin-d">Vitamin D Level (IU)</label>
+                <input type="number" id="vitamin-d" name="vitamin-d" min="0" required>
+            </div>
+<!--
+          
+            <fieldset>
+                <legend>Choose National Dishes</legend>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="national-dish-1" name="national-dish" value="Ackee and Saltfish">
+                    <label for="national-dish-1">Ackee and Saltfish</label>
+                </div>
+
+                <div class="checkbox-container">
+                    <input type="checkbox" id="national-dish-2" name="national-dish" value="Adobo">
+                    <label for="national-dish-2">Adobo</label>
+                </div>
+               
+            </fieldset>
+            -->    
+            
+            <!-- Dropdown Field -->
+<label for="national-dish">Choose National Dish:</label>
+<select id="national-dish" name="national-dish">
+    <option value="">Select National Dish</option>
+    <!-- Options will be populated from the CSV file -->
+</select>
+    
+
+
+
+            <!-- Submit and Reset Buttons -->
+            <div class="button-container">
+                <button type="submit">Predict</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+
+        <a href="landing-form.html" class="back-link">Back to Landing Page</a>
+    </div>
+
+    <!-- JavaScript (Optional) -->
+    <script src="script.js"></script>
+</body>
+</html>
